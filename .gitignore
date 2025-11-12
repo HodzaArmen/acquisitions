@@ -1,4 +1,11 @@
 node_modules
 .env.*
 logs/
-.idea.neon_local/
+.idea
+.neon_local/
+coverage/
+dist/
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-error.log*
