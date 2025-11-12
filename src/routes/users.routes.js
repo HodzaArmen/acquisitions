@@ -15,6 +15,11 @@ router.get('/:id', authenticateToken, fetchUserById);
 
 router.put('/:id', authenticateToken, updateUserById);
 
-router.delete('/:id', authenticateToken, requireRole(['admin']), deleteUserById);
+router.delete(
+  '/:id',
+  authenticateToken,
+  requireRole(['admin']),
+  deleteUserById
+);
 
 export default router;
